@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo  from '/logo.png'
 import { BiPhoneCall } from "react-icons/bi";
 const Navbar = () => {
+
+  const [isSicky, setIsSicky]=useState(false)
+  useEffect(()=>{
+    const handleScroll=()=>{
+      const offset=window.scrollY;
+      if(offset>0){
+        setIsSicky(true)
+      }else{
+        setIsSicky(false)
+      }
+    };
+    
+    
+    window.addEventListener("scroll",handleScroll);
+    return ()=>{
+      window.addEventListener("scroll",handleScroll);
+    }
+  },[])
+
+
+
     const navItems= <>
      <li><a href="/">Home</a></li>
       <li>
@@ -28,8 +49,10 @@ const Navbar = () => {
       </li>
       <li><a>Offres</a></li></>
   return (
-    <header className='max-w-screen-2xl container mx-auto'>
-        <div className="navbar xl:px-24">
+    <header className='max-w-screen-2xl 
+    container mx-auto fixed top-0 left-0 right-0
+    transition-all duration-300 easy-in-out'>
+        <div className={`navbar xl:px-24 ${isSicky ? "shadow-md bg-base-100 transition-all duration-300 easy-in-out" : " "}`}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
