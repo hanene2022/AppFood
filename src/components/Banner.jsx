@@ -17,11 +17,11 @@ const Banner = () => {
 
   <h5 className='font-medium'>spicy noodles</h5>
   <div className="rating rating-sm">
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" checked />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly/>
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" checked  readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" readOnly />
 </div>
 <p className='text-red'>$18.00</p>
 </div>
@@ -35,11 +35,11 @@ const Banner = () => {
 
   <h5 className='font-medium'>spicy noodles</h5>
   <div className="rating rating-sm">
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" checked />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  />
-<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500" checked readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly/>
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly />
+<input type="radio" name="rating-4" className="mask mask-star-2 bg-yellow-500"  readOnly/>
 </div>
 <p className='text-red'>$18.00</p>
 </div>
